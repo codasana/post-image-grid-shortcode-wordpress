@@ -1,0 +1,58 @@
+.lk_grid_image {
+width:300px;
+}
+
+/* Recipe Index */
+.lk_image_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lk_image_grid a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+	  border:none !important;
+}
+.lk_image_grid a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+.lk_image_grid a {
+    width: calc(25% - 6px);
+  }
+
+.lk_image_grid a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+
+.lk_image_grid a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.lk_image_grid a:hover img {
+  transform: scale(1.15);
+}
+
+.lk_image_grid figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.lk_image_grid figcaption {
+  margin-top: 15px;
+  text-align:center;
+}
+
+.lk_image_grid img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
